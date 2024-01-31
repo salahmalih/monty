@@ -69,12 +69,8 @@ char *_strtok(char str[], const char *delim)
 	}
 
 	str_start = splitted;
-
-	/* Return NULL if there are no more tokens in the string */
 	if (str_start == str_end)
 		return (NULL);
-
-	/* Tokenize the string based on the specified delimiter */
 	for (bool = 0; *splitted; splitted++)
 	{
 		if (splitted != str_start)
@@ -93,8 +89,6 @@ char *_strtok(char str[], const char *delim)
 		if (bool == 0 && *splitted)
 			bool = 1;
 	}
-
-	/* Return NULL if there are no more tokens in the string */
 	if (bool == 0)
 		return (NULL);
 

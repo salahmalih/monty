@@ -2,7 +2,7 @@
 
 /**
  * print_err - Prints appropiate error messages determined by their error code.
- * @error_code: The error codes are the following:
+ * @err_code: The error codes are the following:
  * (1) => The user does not give any file or more than one file to the program.
  * (2) => The file provided is not a file that can be opened or read.
  * (3) => The file provided contains an invalid instruction.
@@ -27,9 +27,9 @@ void print_err(int err_code, ...)
 				va_arg(arg, char *));
 	else if (err_code == 3)
 	{
-			line_num = va_arg(arg, int);
-			op = va_arg(arg, char *);
-			fprintf(stderr, "L%d: unknown instruction %s\n", line_num, op);
+		line_num = va_arg(arg, int);
+		op = va_arg(arg, char *);
+		fprintf(stderr, "L%d: unknown instruction %s\n", line_num, op);
 	}
 	else if (err_code == 4)
 		fprintf(stderr, "Error: malloc failed\n");

@@ -80,4 +80,5 @@ void find_func(char *, char *, int, int);
 int _strlen(const char *s);
 int cmp_chars(char str[], const char *delim);
 char *_strtok(char str[], const char *delim);
+stack_t *get_head(void);
 #endif

@@ -1,15 +1,4 @@
 #include "monty.h"
-
-/**
- * get_head - Returns the head of the stack
- *
- * Return: Pointer to the head of the stack
- */
-stack_t *get_head(void)
-{
-	static stack_t *head = NULL;
-	return head;
-}
 /**
  * create_node - Creates a node.
  * @n: Number to go inside the node.

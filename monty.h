@@ -39,7 +39,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-extern stack_t *head;
+extern stack_t *head = NULL;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 
@@ -80,5 +80,5 @@ void find_func(char *, char *, int, int);
 int _strlen(const char *s);
 int cmp_chars(char str[], const char *delim);
 char *_strtok(char str[], const char *delim);
-stack_t *get_head(void);
+
 #endif

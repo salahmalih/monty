@@ -9,8 +9,6 @@
 
 int main(int argc, char *argv[])
 {
-	stack_t *head = get_head();
-
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");

@@ -1,6 +1,6 @@
 #include "monty.h"
 
-MontyGlobals monty_globals = { .head = NULL };
+stack_t *head = NULL;
 
 /**
  * main - entry point

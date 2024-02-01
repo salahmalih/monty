@@ -10,19 +10,6 @@
 #include <stdarg.h>
 
 /**
- * struct MontyGlobals - Global data structure for Monty interpreter
- * @head: Pointer to the head of the stack
- *
- * Description: This structure holds global data needed for the Monty interpreter.
- *              It includes a pointer to the head of the stack.
- */
-typedef struct {
-	stack_t *head;
-} MontyGlobals;
-
-extern MontyGlobals monty_globals;
-
-/**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
  * @prev: points to the previous element of the stack (or queue)
